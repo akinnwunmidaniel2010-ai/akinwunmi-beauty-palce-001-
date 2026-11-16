@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>PEDICURE AND MANICURE</title>
+        <link rel="icon" type="jpeg" href="icon/hairlogo.jpeg">
+        <link rel="stylesheet" href="css/pedicure.css">
+    </head>
+    <body>
+        <a class="dan4" href="index.html" target="_blank">Back to Home</a>     
+        <div class="sho1">
+            <input id="searchBox" class="bb1" type="search"
+       placeholder="Search for any form of pedicure and manicure..."
+       required>
+        <button class="bb12">
+            <img class="im" src="icon/image.png">
+        </button>
+        </div>  
+        <div class="dv">
+        <h1 class="dan1">AKINWUNMI PEDICURE AND MANICURE PALACE</h1>
+        </div>
+        <div class="grid-container">     
+        <div class="dv1 service-card1">
+            <img class="im2" src="image/danny (56).jpeg">
+            <p class="p1">Trending Manicure</p>
+            <p class="p">Home service: ₦30000</p>
+            <p class="p">vip servive: ₦45,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv2 service-card1">
+            <img class="im2" src="image/danny (55).jpeg">
+            <p class="p1">Step Manicure</p>
+            <p class="p">Home service: ₦25000</p>
+            <p class="p">vip service: ₦30,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv3 service-card1">
+            <img class="im2" src="image/danny (54).jpeg">
+            <p class="p1">Layer Manicure</p>
+            <p class="p">Home service: ₦15000</p>
+            <p class="p">vip service: ₦35,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv4 service-card1">
+            <img class="im2" src="image/danny (53).jpeg">
+            <p class="p1">Layer Pedicure</p>
+            <p class="p">Home service: ₦20000</p>
+            <p class="p">vip service: ₦35,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv1 service-card1">
+            <img class="im2" src="image/danny (56).jpeg">
+            <p class="p1">Trending Manicure</p>
+            <p class="p">Home service: ₦30000</p>
+            <p class="p">vip servive: ₦45,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv2 service-card1">
+            <img class="im2" src="image/danny (55).jpeg">
+            <p class="p1">Step Manicure</p>
+            <p class="p">Home service: ₦25000</p>
+            <p class="p">vip service: ₦30,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv3 service-card1">
+            <img class="im2" src="image/danny (54).jpeg">
+            <p class="p1">Layer Manicure</p>
+            <p class="p">Home service: ₦15000</p>
+            <p class="p">vip service: ₦35,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv4 service-card1">
+            <img class="im2" src="image/danny (53).jpeg">
+            <p class="p1">Layer Pedicure</p>
+            <p class="p">Home service: ₦20000</p>
+            <p class="p">vip service: ₦35,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        </div>
+        <script>
+            const searchBox = document.getElementById('searchBox');
+            const cards = document.querySelectorAll('.service-card1');
+
+            searchBox.addEventListener('input', function() {
+            const word = searchBox.value.toLowerCase();
+
+            cards.forEach(function(card) {
+            const text = card.textContent.toLowerCase();
+            if (text.includes(word)) {
+            card.style.display = 'block';
+            } else {
+            card.style.display = 'none';
+            }
+            });
+            });
+        </script>
+    </body>
+</html>

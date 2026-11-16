@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>FRONTAL AND WIG</title>
+        <link rel="icon" type="jpeg" href="icon/hairlogo.jpeg">
+        <link rel="stylesheet" href="css/frontal.css">
+        </head>
+    <body>
+        <a class="dan4" href="index.html" target="_blank">Back to Home</a>
+        <div class="sho1">
+            <input id="searchBox" class="bb1" type="search"
+            placeholder="Search for any kind of frontal and wig..."
+            required>
+            <button class="bb12">
+                <img class="im" src="icon/image.png">
+            </button>
+        </div>    
+        <div class="dv">
+        <h1 class="dan1">AKINWUNMI FRONTAL AND WIG PALACE</h1>
+        </div> 
+        <div class="grid-container">         
+        <div class="dv1 service-card1">
+            <img class="im2" src="image/danny (4).jpeg">
+            <p class="p1">Afro Wig</p>
+            <p class="p">Home service: ₦35000</p>
+            <p class="p">vip servive: ₦55,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv2 service-card1">
+            <img class="im2" src="image/danny (3).jpeg">
+            <p class="p1">Bone-Straight</p>
+            <p class="p">Home service: ₦25000</p>
+            <p class="p">vip service: ₦30,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv3 service-card1">
+            <img class="im2" src="image/danny (2).jpeg">
+            <p class="p1">Layer Frontal</p>
+            <p class="p">Home service: ₦15000</p>
+            <p class="p">vip service: ₦35,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv4 service-card1">
+            <img class="im2" src="image/danny (5).jpeg">
+            <p class="p1">Coiling Wig</p>
+            <p class="p">Home service: ₦20000</p>
+            <p class="p">vip service: ₦35,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv1 service-card1">
+            <img class="im2" src="image/danny (4).jpeg">
+            <p class="p1">Afro Wig</p>
+            <p class="p">Home service: ₦35000</p>
+            <p class="p">vip servive: ₦55,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv2 service-card1">
+            <img class="im2" src="image/danny (3).jpeg">
+            <p class="p1">Bone-Straight</p>
+            <p class="p">Home service: ₦25000</p>
+            <p class="p">vip service: ₦30,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv3 service-card1">
+            <img class="im2" src="image/danny (2).jpeg">
+            <p class="p1">Layer Frontal</p>
+            <p class="p">Home service: ₦15000</p>
+            <p class="p">vip service: ₦35,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv4 service-card1">
+            <img class="im2" src="image/danny (5).jpeg">
+            <p class="p1">Coiling Wig</p>
+            <p class="p">Home service: ₦20000</p>
+            <p class="p">vip service: ₦35,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        </div>
+        <script>
+            const searchBox = document.getElementById('searchBox');
+            const cards = document.querySelectorAll('.service-card1');
+
+            searchBox.addEventListener('input', function() {
+            const word = searchBox.value.toLowerCase();
+
+            cards.forEach(function(card) {
+            const text = card.textContent.toLowerCase();
+            if (text.includes(word)) {
+            card.style.display = 'block';
+            } else {
+            card.style.display = 'none';
+            }
+            });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BOOK NOW/LATER</title>
+        <link class="" rel="icon" type="jpeg" href="icon/hairlogo.jpeg">
+        <link rel="stylesheet" href="css/order and book.css">
+    </head>
+    <body>
+        <a class="aa" href="index.html" target="_blank">Back to home</a>
+        <h1 class="h1">BOOK THE SERVICE YOU WANT NOW/LATER</h1>
+        <details class="det">
+        <summary class="h3">Notice:</summary>
+        <div class="div1">
+        <h3 class="h">Read Carefully</h3>
+        <p class="p">* the date pick is the day the service is going to be rendered</p>
+        <p class="p">* We we get back to you as long as we receive your request</p>
+        <p class="p">* After receiving your request we will contact you through the <strong class="st">phone number</strong> you fill</p>
+        </details>
+        </div>
+        <div class="div">
+            <div>
+            <img class="logo" src="icon/hairlogo.jpeg">
+            <H2 class="h2">FILL IN THE FORM REQUIRED</H2>
+            </div>
+            <form id="myForm4" action="https://formsubmit.co/akinnwunmidaniel2010@gmail.com" method="post">
+            <label class="lab1">Full Name</label>
+            <input class="in1" type="name" inputmode="alphabelt"
+            placeholder="Enter your full name"
+            required>
+            <label class="lab2">Phone Number</label>
+            <input class="in1" type="tel" maxlength="11" inputmode="numeric"
+            pattern="[0-9]{11}" title="phone number must be 11 digit"
+            placeholder="Enter your phone number"
+            required>
+            <label class="lab3">Date</label>
+            <input class="in1" type="Date"
+            required>   
+            <label class="lab4">Choose the type of services</label>
+            <div class="dvi">
+                <input class="in2" type="radio" name="service" value="Home service" id="home" required>
+                <p class="pp1">Home service</p>
+
+                <input class="in3" type="radio" name="service" value="Vip service" id="vip" required>
+                <p class="pp2">Vip service</p>
+            </div>
+
+            <div id="addressBox" style="display:none; margin-top:10px;">
+                <label>Home Address</label><br>
+                <input class="in1" type="text" id="address" placeholder="Enter your home address">
+            </div>
+            <button class="but">SUBMIT</button>
+            </form>
+        </div>
+        <script>
+            document.getElementById("myForm4").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Thanks,Your booking service have been submitted,we will get to you as soon as possible!");
+            this.reset();
+            });
+            const homeRadio = document.getElementById('home');
+            const vipRadio = document.getElementById('vip');
+            const addressBox = document.getElementById('addressBox');
+            const addressInput = document.getElementById('address');
+
+            homeRadio.addEventListener('change', function() {
+            if (homeRadio.checked) {
+            addressBox.style.display = 'block';
+            addressInput.required = true;
+            }
+            });
+
+            vipRadio.addEventListener('change', function() {
+            if (vipRadio.checked) {
+            addressBox.style.display = 'none';
+            addressInput.required = false;
+            addressInput.value = '';
+            }
+            });
+        </script>
+    </body>
+</html>

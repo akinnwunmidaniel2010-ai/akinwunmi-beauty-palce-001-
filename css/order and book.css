@@ -1,0 +1,141 @@
+body{
+                background-color: rgb(30, 58, 138);
+            }
+            .in1{
+                height: 32px;
+                width: 400px;
+                font-family: Arial, Helvetica, sans-serif;
+                border-color: rgb(2, 92, 122);
+                border-style: solid;
+                font-size: medium;
+                display: block;
+            }
+            .in2{
+                height: 20px;
+                width: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                border-color: rgb(2, 92, 122);
+                border-style: solid;
+                font-size: medium;
+                display: inline-block;
+            }
+            .in3{
+                height: 20px;
+                width: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                border-color: rgb(2, 92, 122);
+                border-style: solid;
+                font-size: medium;
+                display: inline-block;
+                margin-left: 15px;
+            }
+            .lab1{
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+            }
+            .lab2{
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+                margin-top: 10px;
+            }
+            .lab3{
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+                display: block;
+            }
+            .lab4{
+                font-family: 'Times New Roman', Times, serif;
+                color: black;
+                margin-top: 200px;
+            }
+            .div{
+                margin-top: 50px;
+                margin-left: 300px;
+                background-color: cyan;
+                height: 480px;
+                padding-top: 5px;
+                padding-left: 50px;
+                width: 500px;
+            }
+            .h3{
+                color: rgb(255 255 255);
+                text-decoration: underline;
+            }
+            .div1{
+                margin-left: 50px;
+            }
+            .p{
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: lighter;
+                font-size: large;
+                color: rgb(255 255 255);
+            }
+            .st{
+                color: red;
+            }
+            .det{
+                margin-left: 45px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+            }
+            .h{
+                color: gold;
+            }
+            .but{
+                color: white;
+                background-color: blue;
+                height: 32px;
+                width: 150px;
+                border: none;
+                font-size: medium;
+                font-weight: bolder;
+                cursor: pointer;
+                margin-top: 30px;
+                margin-left: 300px;
+            }
+            .but:hover{
+                background-color: red;
+                transition: opacity 1s;
+                box-shadow: 5px 10px 5px black;
+            }
+            .but:active{
+                opacity: 0.20;
+            }
+            .pp1,
+            .pp2{
+                display: inline-block;
+                font-size: larger;
+                
+            }
+            .logo{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                display: inline-block;
+            }
+            .h1{
+                color: gold;
+                margin-left: 200px;
+                display: inline-block;               
+            }
+            .aa{
+                color: red;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: larger;
+                margin-left: 5px;
+                display: block;
+            }
+            .aa:hover{
+                color: gold;
+                text-decoration: none;
+            }
+            .aa:active{
+                opacity: 0.20;
+            }
+            .d{
+                margin-top: 20px;
+            }
+            .h2{
+                display: inline-block;
+            }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>HOME SERVICE</title>
+        <link rel="icon" type="jpeg" href="icon/hairlogo.jpeg">
+        <link rel="stylesheet" href="css/home service.css">
+        </head>
+    <body>
+        <div class="dan4">
+        <a class="dan4" href="index.html" target="_blank">Back to Home</a>
+        </div>
+        <div class="sho1">
+            <input id="searchBox" class="bb1" type="search"
+            placeholder="Search for braids, wigs, nails, lashes..."
+            required>
+        <button class="bb12">
+            <img class="im" src="icon/image.png">
+        </button>
+        </div> 
+        <div class="dv">
+        <h1 class="dan1">AKINWUNMI HOME SERVICE PALACE</h1>
+        </div>        
+        <div class="grid-container">  
+        <div class="dv1 service-card1">
+            <img class="im2" src="image/hair4.webp">
+            <p class="p1">Shuku-Indomie Braid</p>
+            <p class="p">Home servive: ₦25,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv2 service-card1">
+            <img class="im2" src="image/danny (25).jpeg">
+            <p class="p1">Star-Shaped Gele</p>
+            <p class="p">Home service: ₦30,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv3 service-card1">
+            <img class="im2" src="image/danny (45).jpeg">
+            <p class="p1">Gel Nails</p>
+            <p class="p"> Home service: ₦35,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv4 service-card1">
+            <img class="im2" src="image/danny (40).jpeg">
+            <p class="p1">Stone-care Pedicure</p>
+            <p class="p">Home service: ₦35,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv1 service-card1">
+            <img class="im2" src="image/hair4.webp">
+            <p class="p1">Shuku-Indomie Braid</p>
+            <p class="p">Home servive: ₦25,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv2 service-card1">
+            <img class="im2" src="image/danny (25).jpeg">
+            <p class="p1">Star-Shaped Gele</p>
+            <p class="p">Home service: ₦30,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv3 service-card1">
+            <img class="im2" src="image/danny (45).jpeg">
+            <p class="p1">Shine Nails</p>
+            <p class="p"> Home service: ₦35,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        <div class="dv4 service-card1">
+            <img class="im2" src="image/danny (40).jpeg">
+            <p class="p1">Stone-care Pedicure</p>
+            <p class="p">Home service: ₦35,000</p>
+           <a href="order and book form.html" target="_blank"><button class="bb2">Book now</button></a>
+           <a href="order and book form.html" target="_blank"><button class="bb3">Book later</button></a>
+        </div>
+        </div>  
+        <script>
+            const searchBox = document.getElementById('searchBox');
+            const cards = document.querySelectorAll('.service-card1');
+
+            searchBox.addEventListener('input', function() {
+            const word = searchBox.value.toLowerCase();
+
+            cards.forEach(function(card) {
+            const text = card.textContent.toLowerCase();
+            if (text.includes(word)) {
+            card.style.display = 'block';
+            } else {
+            card.style.display = 'none';
+            }
+            });
+            });
+        </script>
+    </body>
+</html>
