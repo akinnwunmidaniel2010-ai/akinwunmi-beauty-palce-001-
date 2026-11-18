@@ -23,32 +23,34 @@
             <H2 class="h2">FILL IN THE FORM REQUIRED</H2>
             </div>
             <form id="myForm4" action="https://formsubmit.co/akinnwunmidaniel2010@gmail.com" method="post">
-            <label class="lab1">Full Name</label>
-            <input class="in1" type="name" inputmode="alphabelt"
-            placeholder="Enter your full name"
-            required>
-            <label class="lab2">Phone Number</label>
-            <input class="in1" type="tel" maxlength="11" inputmode="numeric"
-            pattern="[0-9]{11}" title="phone number must be 11 digit"
-            placeholder="Enter your phone number"
-            required>
-            <label class="lab3">Date</label>
-            <input class="in1" type="Date"
-            required>   
-            <label class="lab4">Choose the type of services</label>
-            <div class="dvi">
-                <input class="in2" type="radio" name="service" value="Home service" id="home" required>
-                <p class="pp1">Home service</p>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="New Booking from Beauty Palace Website!">
 
-                <input class="in3" type="radio" name="service" value="Vip service" id="vip" required>
-                <p class="pp2">Vip service</p>
-            </div>
+                <label class="lab1">Full Name</label>
+                <input class="in1" type="text" name="Full Name" inputmode="text" placeholder="Enter your full name" required>
 
-            <div id="addressBox" style="display:none; margin-top:10px;">
-                <label>Home Address</label><br>
-                <input class="in1" type="text" id="address" placeholder="Enter your home address">
-            </div>
-            <button class="but">SUBMIT</button>
+                <label class="lab2">Phone Number</label>
+                <input class="in1" type="tel" name="Phone Number" maxlength="11" inputmode="numeric" pattern="[0-9]{11}" title="phone number must be 11 digit" placeholder="Enter your phone number" required>
+
+                <label class="lab3">Date</label>
+                <input class="in1" type="date" name="Date" required>
+
+                <label class="lab4">Choose the type of services</label>
+                <div class="dvi">
+                    <input class="in2" type="radio" name="service" value="Home service" id="home" required>
+                    <p class="pp1">Home service</p>
+
+                    <input class="in3" type="radio" name="service" value="Vip service" id="vip" required>
+                    <p class="pp2">Vip service</p>
+                </div>
+
+                <div id="addressBox" style="display:none; margin-top:10px;">
+                    <label>Home Address</label><br>
+                    <input class="in1" type="text" name="Home Address" id="address" placeholder="Enter your home address">
+                </div>
+
+                <button class="but" type="submit">SUBMIT</button>
             </form>
         </div>
         <script>
