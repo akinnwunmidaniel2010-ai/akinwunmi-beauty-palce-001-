@@ -22,7 +22,7 @@
             <img class="logo" src="icon/hairlogo.jpeg">
             <H2 class="h2">FILL IN THE FORM REQUIRED</H2>
             </div>
-            <form id="myForm4" action="https://formsubmit.co/akinnwunmidaniel2010@gmail.com" method="post">
+            <form id="myForm4" action="https://formsubmit.co/ajax/akinnwunmidaniel2010@gmail.com" method="post">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_subject" value="New Booking from Beauty Palace Website!">
@@ -54,10 +54,22 @@
             </form>
         </div>
         <script>
-            document.getElementById("myForm4").addEventListener("submit", function(e) {
-            e.preventDefault();
-            alert("Thanks,Your booking service have been submitted,we will get to you as soon as possible!");
-            this.reset();
+           document.getElementById("myForm4").addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                const form = this; // save form here
+                const formData = new FormData(form);
+
+                fetch(form.action, {
+                    method: "POST",
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                }).then(() => {
+                    alert("Thanks, Your booking service have been submitted, we will get to you as soon as possible!");
+                    form.reset();
+                }).catch(() => {
+                    alert("Network error, try again!");
+                });
             });
             const homeRadio = document.getElementById('home');
             const vipRadio = document.getElementById('vip');
